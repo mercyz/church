@@ -1,0 +1,173 @@
+$gray-default:#9b9b9b;
+$blue-primary:#01bcd4;
+
+body{
+    font-family:Open Sans,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+
+.navbar{
+    padding-top:.25rem;
+    padding-bottom:.25rem;
+    z-index: 100;
+
+    *{
+        transition:all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition:all .3s ease-out;
+        -ms-transition: all .3s ease-out;
+        -moz-transition: all .3s ease-out;
+    }
+    &__fixed{
+        color:#555;
+        background:#fff;
+        box-shadow: 0 3px 0 rgba(20,97,255,.15);
+        position:sticky;
+        top:0;
+        z-index: 1040;
+        padding-top:.25rem;
+        padding-bottom:.25rem;
+    }
+    &__link{
+        color:$gray-default;
+        font-size: .9375rem;
+    }
+    &--button{
+        background:blue;
+        color:#fff;
+        padding:.0625rem .625rem;
+        max-height:25px;
+        background:$blue-primary;
+        border-color:$blue-primary;
+        cursor: pointer;
+        border-radius:5px;
+        line-height: 21px;
+        font-size:.9375rem;
+        width:100%;
+        display:block;
+    }
+}
+.banner{
+    position: relative;
+    background-blend-mode: normal;
+	background:url("../images/banner/slide1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height:600px;
+}
+.daily{
+    background:#ecebe9;
+    h5{
+        color:$gray-default
+    }
+    &__input{
+        border:1px solid grey;
+        padding:.5rem .75rem;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: .25rem;
+        font-size:1rem;
+        line-height: 1.5;
+        color:#000;
+    }
+    &__button{
+        padding: .625rem 1.25rem;
+        background:$blue-primary;
+        border-color:$blue-primary;
+        color:#fff;
+        border-radius: .25rem;
+    }
+}
+.events{
+    background:url('../images/bg3.jpg');
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+
+    &__titlebox{ 
+        
+        h1{
+        font-size: 45px;
+        color: #f8f7f7;
+        display: inline-block;
+        vertical-align: middle;
+        width: 78%;
+        font-family:'Fira Sans',sans-serif;
+        font-weight:600;
+        line-height: 1;
+        }
+    &--date{
+            display: inline-block;
+            color: #f8f7f7;
+            font-size: 16px;
+            border: 2px solid;
+            border-radius: 4px;
+            padding: 12px;
+            vertical-align: middle;
+            width: 14%;
+            margin-right: 35px;
+            border-color:$blue-primary;
+
+            & strong{
+                font-size: 42px;
+                display: block;
+                font-weight: 900;
+                line-height: 36px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    &__bottomVideo--blackarea{
+        background-color: #070706;
+        width: 50%;
+        padding: 24px 30px 14px;
+        min-height: 88px;
+        position: relative;
+
+        &::before{
+            content: "";
+            height: 44px;
+            width: 6px;
+            background-color: #070706;
+            position: absolute;
+            right: -3px;
+            top: 0;
+            border-radius: 0 100% 100% 0;
+            z-index: 2;
+        }
+        & span{
+            color:$blue-primary;
+        }
+    }
+    &__bottomVideo--orangearea{
+        background-color:#b6861b;
+        width: 50%;
+        padding: 18px 0px;
+        min-height: 88px;
+        position: relative;
+
+        &::before{
+            content: "";
+            height: 44px;
+            width: 6px;
+            position: absolute;
+            left: -2px;
+            bottom: 0;
+            border-radius: 100% 0 0 100%;
+        }
+        &--countdown{
+            position: relative;
+            right: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            
+            & li span{
+                font-size: 20px;
+                font-weight: 700;
+                color: #fff;
+                padding-left:5px;
+
+            }
+        }
+    }
+}

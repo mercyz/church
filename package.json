@@ -1,0 +1,15 @@
+{
+  "name": "mcm",
+  "version": "1.0.0",
+  "description": "Mike cassidy's ministry",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mercy",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
