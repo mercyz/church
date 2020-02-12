@@ -53,10 +53,10 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height:600px;
+	min-height:100vh;
 }
 .daily{
-    background:#ecebe9;
+    background:#faf9f7;
     h5{
         color:$gray-default
     }
@@ -83,6 +83,11 @@ body{
     background-position:center;
     background-size:cover;
 
+    
+    &__content{
+        position: relative;
+        bottom:150px;
+    }
     &__titlebox{ 
         
         h1{
@@ -170,4 +175,28 @@ body{
             }
         }
     }
+}
+.sermons{
+
+    & h4{
+        font-family:'Fira Sans',sans-serif;
+        font-weight:600;
+    }
+    
+    &__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        width: 100%;
+        gap:1rem;
+    }
+    &__block{
+        display:grid;
+        grid-template-rows: repeat(auto-fill, minmax(100px, 100px));
+        gap:1rem ;
+        width:100%;
+    }
+}
+
+.default-border-color{
+    border:1px solid #e0e0e0;
 }

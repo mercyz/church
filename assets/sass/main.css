@@ -56,11 +56,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 600px;
+  min-height: 100vh;
 }
 
 .daily {
-  background: #ecebe9;
+  background: #faf9f7;
 }
 
 .daily h5 {
@@ -90,6 +90,11 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+.events__content {
+  position: relative;
+  bottom: 150px;
 }
 
 .events__titlebox h1 {
@@ -179,5 +184,32 @@ body {
   font-weight: 700;
   color: #fff;
   padding-left: 5px;
+}
+
+.sermons h4 {
+  font-family: 'Fira Sans',sans-serif;
+  font-weight: 600;
+}
+
+.sermons__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1.5fr;
+      grid-template-columns: 1fr 1fr 1.5fr;
+  width: 100%;
+  gap: 1rem;
+}
+
+.sermons__block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(100px, 100px))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(100px, 100px));
+  gap: 1rem;
+  width: 100%;
+}
+
+.default-border-color {
+  border: 1px solid #e0e0e0;
 }
 /*# sourceMappingURL=main.css.map */
