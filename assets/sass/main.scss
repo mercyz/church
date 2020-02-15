@@ -58,7 +58,9 @@ body{
 .daily{
     background:#faf9f7;
     h5{
-        color:$gray-default
+        color:$gray-default;
+        font-family:'Fira Sans',sans-serif;
+        font-weight:600;
     }
     &__input{
         border:1px solid grey;
@@ -75,6 +77,13 @@ body{
         border-color:$blue-primary;
         color:#fff;
         border-radius: .25rem;
+    }
+}
+.welcome{
+
+    h3{
+        font-family:'Fira Sans',sans-serif;
+        font-weight:600;
     }
 }
 .events{
@@ -122,7 +131,7 @@ body{
         }
     }
     &__bottomVideo--blackarea{
-        background-color: #070706;
+        background-color: #ffffff;
         width: 50%;
         padding: 24px 30px 14px;
         min-height: 88px;
@@ -132,7 +141,7 @@ body{
             content: "";
             height: 44px;
             width: 6px;
-            background-color: #070706;
+            background-color: #ffffff;
             position: absolute;
             right: -3px;
             top: 0;
@@ -144,7 +153,7 @@ body{
         }
     }
     &__bottomVideo--orangearea{
-        background-color:#b6861b;
+        background-color:$blue-primary;
         width: 50%;
         padding: 18px 0px;
         min-height: 88px;
@@ -199,4 +208,57 @@ body{
 
 .default-border-color{
     border:1px solid #e0e0e0;
+}
+.f-events{
+
+    & h4{
+        font-family:'Fira Sans',sans-serif;
+        font-weight:600;
+    }
+    &__grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 300px));
+        width:100%;
+        gap:1rem;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+.hover\:lift {
+    transform: translate(0, 0);
+    transition: all .3s ease-out;
+
+    &:hover {
+        transform: translate(0, -5px);
+    }
+}
+
+.connect{
+
+    & h4{
+        font-family:'Fira Sans',sans-serif;
+        font-weight:600;
+    }
+    &__grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 350px));
+        width:100%;
+        gap:1rem;
+        justify-content: center;
+        justify-items: center;
+    }
+}
+
+.footer{
+    background:#efefef;
+
+    &__link{
+        color:#4a4a4a;
+        font-weight:300;
+    }
+    &__block{
+        width:100%;
+        max-width: 226px;
+    }
 }

@@ -65,6 +65,8 @@ body {
 
 .daily h5 {
   color: #9b9b9b;
+  font-family: 'Fira Sans',sans-serif;
+  font-weight: 600;
 }
 
 .daily__input {
@@ -83,6 +85,11 @@ body {
   border-color: #01bcd4;
   color: #fff;
   border-radius: .25rem;
+}
+
+.welcome h3 {
+  font-family: 'Fira Sans',sans-serif;
+  font-weight: 600;
 }
 
 .events {
@@ -130,7 +137,7 @@ body {
 }
 
 .events__bottomVideo--blackarea {
-  background-color: #070706;
+  background-color: #ffffff;
   width: 50%;
   padding: 24px 30px 14px;
   min-height: 88px;
@@ -141,7 +148,7 @@ body {
   content: "";
   height: 44px;
   width: 6px;
-  background-color: #070706;
+  background-color: #ffffff;
   position: absolute;
   right: -3px;
   top: 0;
@@ -154,7 +161,7 @@ body {
 }
 
 .events__bottomVideo--orangearea {
-  background-color: #b6861b;
+  background-color: #01bcd4;
   width: 50%;
   padding: 18px 0px;
   min-height: 88px;
@@ -211,5 +218,67 @@ body {
 
 .default-border-color {
   border: 1px solid #e0e0e0;
+}
+
+.f-events h4 {
+  font-family: 'Fira Sans',sans-serif;
+  font-weight: 600;
+}
+
+.f-events__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 300px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(220px, 300px));
+  width: 100%;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.hover\:lift {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.hover\:lift:hover {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+.connect h4 {
+  font-family: 'Fira Sans',sans-serif;
+  font-weight: 600;
+}
+
+.connect__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 350px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(220px, 350px));
+  width: 100%;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.footer {
+  background: #efefef;
+}
+
+.footer__link {
+  color: #4a4a4a;
+  font-weight: 300;
+}
+
+.footer__block {
+  width: 100%;
+  max-width: 226px;
 }
 /*# sourceMappingURL=main.css.map */
