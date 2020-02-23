@@ -6,11 +6,6 @@ body {
   padding-top: .25rem;
   padding-bottom: .25rem;
   z-index: 100;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.navbar * {
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-out;
@@ -39,15 +34,17 @@ body {
 .navbar--button {
   background: blue;
   color: #fff;
-  padding: .0625rem .625rem;
+  padding-top: 2px;
+  width: 90px;
+  height: 30px;
   max-height: 25px;
   background: #01bcd4;
   border-color: #01bcd4;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
   line-height: 21px;
   font-size: .9375rem;
-  width: 100%;
+  text-align: center;
   display: block;
 }
 
@@ -58,7 +55,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .daily {

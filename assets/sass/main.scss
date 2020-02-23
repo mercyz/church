@@ -10,14 +10,11 @@ body{
     padding-bottom:.25rem;
     z-index: 100;
     transition:all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition:all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
 
-    *{
-        transition:all .3s ease-in-out;
-        -webkit-transition: all .3s ease-in-out;
-        -o-transition:all .3s ease-out;
-        -ms-transition: all .3s ease-out;
-        -moz-transition: all .3s ease-out;
-    }
     &__fixed{
         color:#555;
         background:#fff;
@@ -35,15 +32,19 @@ body{
     &--button{
         background:blue;
         color:#fff;
-        padding:.0625rem .625rem;
+        // padding:.0625rem .625rem;
+        padding-top:2px;
+        width:90px;
+        height:30px;
         max-height:25px;
         background:$blue-primary;
         border-color:$blue-primary;
         cursor: pointer;
-        border-radius:5px;
+        border-radius:2px;
         line-height: 21px;
         font-size:.9375rem;
-        width:100%;
+        text-align:center;
+        // width:100%;
         display:block;
     }
 }
@@ -54,7 +55,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	min-height:80vh;
+	min-height:90vh;
 }
 .daily{
     background:#faf9f7;

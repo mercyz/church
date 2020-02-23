@@ -3,7 +3,7 @@
 const navScrol = document.querySelector('.navbar');
 
 window.addEventListener('scroll', (event)=>{
-    if(window.scrollY > 475){
+    if(window.scrollY > 275){
         navScrol.classList.add('navbar__fixed');
     }
 })
