@@ -6,6 +6,8 @@ body {
   padding-top: .25rem;
   padding-bottom: .25rem;
   z-index: 100;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .navbar * {
