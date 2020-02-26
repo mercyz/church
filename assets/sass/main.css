@@ -51,7 +51,7 @@ body {
 .banner {
   position: relative;
   background-blend-mode: normal;
-  background: url("../images/banner/slide2.jpg");
+  background: url("../images/banner/next-event.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,6 +89,10 @@ body {
 .welcome h3 {
   font-family: 'Fira Sans',sans-serif;
   font-weight: 600;
+}
+
+.pst-img img {
+  height: 525px;
 }
 
 .events {
