@@ -326,3 +326,26 @@ body{
         }
     }
 }
+
+@media(max-width:767px){
+    .mobile{
+        display:block;
+        position: fixed;
+        bottom:0;
+        background:#fff;
+        padding-top: 1rem;
+        padding-bottom:1rem;
+        z-index: 100;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        box-shadow: 1px -1px 3px 1px #e8e8e8;
+
+        &__navbar--icons{
+            height:30px;
+            margin:0 8px;
+        }
+    }
+}
