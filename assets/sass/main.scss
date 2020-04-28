@@ -117,7 +117,7 @@ body{
     &--date{
             display: inline-block;
             color: #f8f7f7;
-            font-size: 16px;
+            font-size: 15px;
             border: 2px solid;
             border-radius: 4px;
             padding: 12px;
@@ -321,7 +321,7 @@ body{
         &__grid{
             display: flex;
             flex-direction:column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
     }
