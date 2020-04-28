@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400,600&display=swap">
     <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+    <link rel="stylesheet" href="assets/css/revolution-slider.css">
+    <link rel="stylesheet" href="assets/css/slider-setting.css">
     <link rel="stylesheet" href="assets/sass/main.css">
 </head>
 <body>
+    <div class="preloaderbox"></div>
     <main>
         <!-- Header serction -->
             <nav class="navbar w-full hidden md:block">
@@ -37,11 +40,10 @@
         <!-- End header Section -->
 
         <!-- Banner Section -->
-        <section class="banner w-full">
-            <div class="container flex justify-between mx-2 md:mx-auto py-12">
-
-            </div>
+        <section class="banner">
+            <div class="banner-container"></div>
         </section>
+        <!-- Main slider end -->
         <!-- End Banner Section -->
 
 
@@ -79,20 +81,22 @@
         <!-- End Welcome Section -->
 
         <!-- Events -->
-        <section class="events w-full pt-12">
+        <section class="events w-full md:pt-12">
             <div class="flex flex-col md:flex-row md:items-center py-12 lg:items-end container justify-between mx-auto">
-                <div class="events__content mx-5 lg:w-1/3 md:w-2/4 ">
+                <div class="events__content mx-5 lg:w-1/3 md:w-2/4">
                     <div class="events__titlebox flex py-12">
-                        <span class="events__titlebox--date">
-                            <strong>28</strong>
-                            <span>Feb 20</span>
-                        </span>
+                        <div>
+                            <span class="events__titlebox--date">
+                                <strong>28</strong>
+                                <span>Feb 20</span>
+                            </span>
+                        </div>
                         <h1 class="text-white text-5xl font-bold">Bethel School Of Worship</h1>
                     </div>
                     <p class="text-gray-400 py-8">Genean leo vene quam. Pellntes ique ornare sem eius modte venenatis vestibum. Cras mattis itugir purus. Aenean le vene quam. Pellntes ique ornare seeim eiusmodte venenatis vestibum. Cras mattis citur exquisitely fari then far purus. Aenean leo vene q</p>
                     <a href="#" class="py-3 px-6 bg-white text-black rounded-full uppercase font-bold text-sm">Read More</a>
                 </div>
-                <div class="events__video w-100 md:w-2/4 xl:pr-20 self-center pb-12">
+                <div class="events__video w-full md:w-2/4 xl:pr-20 self-center pb-12">
                     <iframe width="100%" height="380" src="https://www.youtube.com/embed/NJ6YXrhWNoE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <!-- <iframe src="" frameborder="0"></iframe> -->
                     <div class="events__bottomVideo flex">
@@ -166,8 +170,9 @@
                    
                    <div class="sermons__block">
                         <div class="rounded overflow-hidden shadow-lg flex default-border-color">
-                            <div>
-                                <img class="md:h-24 py-2 px-2" src="assets/images/blog/1.jpg" alt="Sunset in the mountains">
+                            <div class="sermons__block--imgcover">
+                                <img class="md:h-24 py-2 px-2" src="assets/images/blog/1.jpg"
+                                    alt="Sunset in the mountains">
                             </div>
                             <div class="px-2 py-4">
                                 <p class="flex">
@@ -180,7 +185,7 @@
                         </div>
 
                         <div class="rounded overflow-hidden shadow-lg flex default-border-color">
-                            <div>
+                            <div class="sermons__block--imgcover">
                                 <img class="md:h-24 py-2 px-2" src="assets/images/blog/2.jpg" alt="Sunset in the mountains">
                             </div>
                             <div class="px-2 py-4">
@@ -194,7 +199,7 @@
                         </div>
 
                         <div class="rounded overflow-hidden shadow-lg flex default-border-color">
-                            <div>
+                            <div class="sermons__block--imgcover">
                                 <img class="md:h-24 py-2 px-2" src="assets/images/blog/1.jpg" >
                             </div>
                             <div class="px-2 py-4">
@@ -208,7 +213,7 @@
                         </div>
 
                         <div class="rounded overflow-hidden shadow-lg flex default-border-color">
-                            <div>
+                            <div class="sermons__block--imgcover">
                                 <img class="md:h-24 py-2 px-2" src="assets/images/blog/2.jpg" >
                             </div>
                             <div class="px-2 py-4">
@@ -333,6 +338,8 @@
         <!-- Footer section End  -->
     </main>
 
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/revolution.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
